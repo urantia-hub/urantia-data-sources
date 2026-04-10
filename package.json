@@ -1,0 +1,23 @@
+{
+  "name": "urantia-data-sources",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "collect": "bun scripts/collect.ts",
+    "collect:dry-run": "bun scripts/collect.ts --dry-run",
+    "upload": "bun scripts/upload.ts",
+    "download": "bun scripts/download.ts",
+    "sync": "bun scripts/sync.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1004.0",
+    "@aws-sdk/lib-storage": "^3.1004.0"
+  }
+}
